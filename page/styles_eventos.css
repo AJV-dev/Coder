@@ -1,0 +1,44 @@
+
+/* Empuja el contenido para que no quede debajo del header */
+main {
+  margin-top: 120px;
+}
+
+/* ===== Estilo global del body ===== */
+body {
+  background-color: #f8fbea !important; /* Fondo verde muy claro para toda la página */
+}
+
+/* ===== Estilos para los botones de filtro personalizados ===== */
+.btn-filter {
+  background-color: #f5f5f5 !important; /* fondo claro */
+  border: 1px solid #ddd !important;    /* borde gris muy sutil */
+  color: #333 !important;               /* color de texto oscuro */
+}
+
+/* Estado activo o al pasar el mouse sobre el filtro */
+.btn-filter.active,
+.btn-filter:hover {
+  background-color: #1e4d2b !important; /* verde oscuro cuando está activo/hover */
+  color: white !important;            /* texto en blanco para contraste */
+}
+
+/* ===== Estilos generales para las tarjetas de evento ===== */
+.event-card {
+  border-radius: 12px !important; /* bordes ligeramente redondeados para suavizar la tarjeta */
+  border: 1px solid #eee !important; /* borde muy sutil */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05) !important; /* sombra ligera para elevar la tarjeta visualmente */
+}
+
+/* Tamaño de las etiquetas (badge) dentro de .event-card */
+.event-card .badge {
+  font-size: 0.75rem !important; /* reduce un poco el tamaño de texto de los badges */
+}
+
+/* ===== Opcional: ajustar espaciado en pantallas pequeñas ===== */
+@media (max-width: 575.98px) {
+  .container { 
+    padding-left: 0.75rem !important;  /* reduce padding lateral en xs para más espacio en móviles */
+    padding-right: 0.75rem !important;
+  }
+}

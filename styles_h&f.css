@@ -1,0 +1,192 @@
+/* Color completo */
+body {
+   background-color: #f6f8f1;
+}
+
+/* Header */
+.header {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  position: fixed; /* Para que no se mueva y esté siempre disponible */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: rgba(246, 248, 241, 0.5); /* transparente 50% */
+  border-bottom: 1px solid rgba(224, 224, 224, 0.5);
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+    box-sizing: border-box; /* importante para que el padding no sume ancho extra y se sorra el boton*/
+}
+
+/* Header al hacer scroll */
+.header.scrolled {
+  background-color: rgba(246, 248, 241, 0.9); /* más sólido */
+  border-bottom: 1px solid rgba(224, 224, 224, 0.9);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #0d2d1f;
+}
+/* Tamaño del logo */
+.logo img {
+  height: 70px;
+}
+
+/* Navegación */
+.nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+}
+
+.nav a:hover {
+  color: #0d2d1f;
+}
+
+/* Acciones para Registro */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Para iniciar Sesión */
+.actions .login {
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+}
+
+/* Para traer un formulario de registro */
+.actions .btn-register {
+  text-decoration: none;
+  background-color: #0d2d1f;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.actions .btn-register:hover {
+  background-color: #134d33;
+}
+
+
+/* A partir de aquí comiensa el footer */
+/* Footer */
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0d2d1f; /* verde oscuro */
+  color: #cfd5cf;           /* gris suave para texto */
+  padding: 40px 30px 20px;
+  font-size: 14px;
+}
+
+/* Contenedor principal */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Cada sección */
+.footer-section h4 {
+  color: #f6f8f1;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-section a {
+  display: block;
+  text-decoration: none;
+  color: #cfd5cf;
+  margin-bottom: 6px;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+}
+
+/* Logo y descripción */
+.footer-logo h2 {
+  color: #f6f8f1;
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+/* Tamaño del logo en el footer */
+.img {
+width: 250px;
+}
+
+.footer-logo .brand {
+  font-weight: bold;
+}
+
+.footer-logo p {
+  margin: 10px 0 15px;
+  max-width: 250px;
+}
+
+/* Redes sociales */
+.social-icons {
+  display: flex;
+  max-width: 150px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #cfd5cf;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+/* Línea divisoria */
+.footer hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin: 20px 0;
+}
+
+/* Parte inferior */
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  font-size: 13px;
+}
+
+.footer-bottom .legal-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #cfd5cf;
+}
+
+.footer-bottom .legal-links a:hover {
+  color: #ffffff;
+}

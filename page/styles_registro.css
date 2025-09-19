@@ -1,0 +1,38 @@
+
+/* Contenido Relleno - Acá debería colocar el CSS para cada página en particular */
+/* Empuja el contenido para que no quede debajo del header */
+main {
+  margin-top: 120px;    /* Margen superior de toda la caja */
+  margin-bottom: 70px;    /* Margen inferior de toda la caja */
+}
+
+body {
+  background-color: #f8fbea; /* Fondo verde claro */
+}
+
+.register-card {
+  max-width: 600px; /* Ancho máximo del formulario */
+  margin: auto; /* Centrado horizontal */
+  margin-top: 3%; /* Separación desde arriba */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra suave */
+}
+
+.login-icon {
+  font-size: 3rem; /* Tamaño grande del ícono */
+  color: #1e4d2b; /* Verde oscuro personalizado */
+}
+
+.btn-register {
+  background-color: #1e4d2b; /* Color verde oscuro */
+  color: white; /* Texto blanco */
+}
+
+.btn-register:hover {
+  background-color: #163b21; /* Verde más oscuro en hover */
+}
+
+.upload-box {
+  background-color: #fafafa; /* Fondo gris claro para la zona de carga */
+  cursor: pointer; /* Aparece la mano al pasar el mouse */
+}

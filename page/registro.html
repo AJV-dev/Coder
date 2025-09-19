@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibrerySpotlight - Registro</title>
+
+        <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Archivo CSS para head y footer -->
+    <link rel="stylesheet" href="../styles_h&f.css">
+    <!-- Archivo CSS para sesión -->
+    <link rel="stylesheet" href="styles_registro.css">
+    <!-- Linkeo a iconos utilizados en el footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- El header se repite en la otras paginas -->
+    <header class="header">
+    <!-- Logo -->
+        <div class="logo">
+            <a href="../index.html">
+            <img src="../img/logo/Logo_LibrarySpotlight.png" alt="Logo LibrarySpotlight">
+            </a>
+            <span></span>
+        </div>
+
+    <!-- Navegación -->
+        <nav class="nav">
+            <a href="libros.html">Libros</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+
+    <!-- Acciones para Registros -->
+        <div class="actions">
+            <a href="sesion.html" class="login">Iniciar Sesión</a>
+            <a href="registro.html" class="btn-register">Registrar Librerías</a>
+        </div>
+    </header>
+
+<!-- Contenido de la pagina - Formulario para registrarse -->
+    <main>
+    <body>
+    <div class="container"> <!-- Bootstrap: contenedor central con márgenes -->
+    <div class="card register-card p-4"> <!-- "card" de Bootstrap, con padding interno de 4 -->
+      
+      <!-- Ícono superior -->
+      <div class="text-center mb-3"> <!-- Centra el contenido y da margen inferior -->
+        <i class="bi bi-building login-icon"></i> <!-- Ícono de edificio de Bootstrap Icons -->
+      </div>
+
+      <!-- Título -->
+      <h5 class="text-center fw-bold">Registrar Librería</h5> <!-- fw-bold = negrita -->
+      <p class="text-center text-muted">Crea tu cuenta y muestra al mundo tu lugar. ¡Las librerías nos enriquecen!</p>
+      
+      <!-- FORMULARIO -->
+      <form>
+        <!-- Sección: Información básica -->
+        <h6 class="fw-semibold mt-3">Información básica</h6> <!-- Título de sección -->
+        
+        <!-- Nombre librería -->
+        <div class="mb-3"> <!-- mb-3 = margin-bottom: 1rem -->
+          <label class="form-label">Nombre de la librería *</label> <!-- form-label estiliza la etiqueta -->
+          <input type="text" class="form-control" placeholder="Ejemplo: Librería Central"> <!-- form-control da estilo uniforme -->
+        </div>
+
+        <!-- Descripción -->
+        <div class="mb-3">
+          <label class="form-label">Descripción</label>
+          <textarea class="form-control" rows="3" placeholder="Describe tu librería..."></textarea>
+        </div>
+
+        <!-- Categoría -->
+        <div class="mb-3">
+          <label class="form-label">Categoría principal</label>
+          <select class="form-select"> <!-- form-select = select con estilo Bootstrap -->
+            <option selected disabled>Seleccione una categoría</option>
+            <option>Literatura</option>
+            <option>Académica</option>
+            <option>Infantil</option>
+            <option>Especializada</option>
+          </select>
+        </div>
+
+        <!-- Contacto y ubicación -->
+        <h6 class="fw-semibold mt-3">Contacto y ubicación</h6>
+        
+        <!-- Email y Teléfono en dos columnas -->
+        <div class="row mb-3"> <!-- row = fila -->
+          <div class="col-md-6"> <!-- col-md-6 = 50% en pantallas medianas o más grandes -->
+            <label class="form-label">Email *</label>
+            <input type="email" class="form-control" placeholder="ejemplo@email.com">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" placeholder="+57 123 456 7890">
+          </div>
+        </div>
+
+        <!-- Dirección -->
+        <div class="mb-3">
+          <label class="form-label">Dirección *</label>
+          <input type="text" class="form-control" placeholder="Calle 123A, Ciudad">
+        </div>
+
+        <!-- Ciudad -->
+        <div class="mb-3">
+          <label class="form-label">Ciudad *</label>
+          <select class="form-select">
+            <option selected disabled>Seleccione la ciudad</option>
+            <option>Bogotá</option>
+            <option>Medellín</option>
+            <option>Cali</option>
+            <option>Otra</option>
+          </select>
+        </div>
+
+        <!-- Horario -->
+        <div class="mb-3">
+          <label class="form-label">Horario de atención</label>
+          <input type="text" class="form-control" placeholder="Ej: Lunes a viernes: 9:00 - 18:00">
+        </div>
+
+        <!-- Características y servicios -->
+        <h6 class="fw-semibold mt-3">Características y servicios</h6>
+        <div class="row"> <!-- Bootstrap grid: 2 columnas -->
+          <div class="col-md-6">
+            <!-- Cada checkbox usa form-check para estilo -->
+            <div class="form-check"><input class="form-check-input" type="checkbox"> <label class="form-check-label">Wifi gratis</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox"> <label class="form-check-label">Zona infantil</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox"> <label class="form-check-label">Café</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox"> <label class="form-check-label">Eventos culturales</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox"> <label class="form-check-label">Área al aire libre</label></div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-check"><input class="form-check-input" type="checkbox"> <label class="form-check-label">Zona de silencio</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox"> <label class="form-check-label">Sala de estudio</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox"> <label class="form-check-label">Parking disponible</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox"> <label class="form-check-label">Acceso a movilidad reducida</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox"> <label class="form-check-label">Zona para niños</label></div>
+          </div>
+        </div>
+
+        <!-- Subida de imágenes -->
+        <h6 class="fw-semibold mt-3">Imágenes</h6>
+        <div class="mb-3 border p-4 text-center rounded upload-box">
+          <!-- border, p-4, text-center y rounded son clases Bootstrap -->
+          <i class="bi bi-cloud-arrow-up fs-2 text-muted"></i> <!-- Ícono nube -->
+          <p class="small text-muted">Sube fotos de tu librería<br>(PNG, JPG máx. 5MB)</p>
+          <input class="form-control" type="file" multiple> <!-- Estilo uniforme para input tipo file -->
+        </div>
+
+        <!-- Términos -->
+        <div class="form-check mb-3"> <!-- Checkbox estilo Bootstrap -->
+          <input class="form-check-input" type="checkbox" id="terms">
+          <label class="form-check-label" for="terms">
+            Acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a>
+          </label>
+        </div>
+
+        <!-- Botón de enviar -->
+        <div class="d-grid mb-2"> <!-- d-grid = display: grid, para que ocupe todo el ancho -->
+          <button type="submit" class="btn btn-register">Registrar Librería</button>
+        </div>
+      </form>
+
+      <!-- Link a iniciar sesión -->
+      <p class="text-center text-muted mt-2">
+        ¿Ya tienes una cuenta? <a href="sesion.html" class="fw-semibold">Inicia sesión aquí</a>
+      </p>
+    </div>
+  </div>
+  </body>
+  </main>
+
+    <!-- Footer se repetirá -->
+     <footer class="footer">
+        <div class="footer-container">
+
+        <!-- Logo y descripción -->
+        <div class="footer-section footer-logo">
+            <img class="img" src="../img/logo/Logo_LS_verde.png" alt="">
+            <p>Descubrí librerías únicas para cada momento. Tu próxima experiencia literaria te está esperando.</p>
+        <div class="social-icons">
+             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        </div>
+
+        <!-- Explorar -->
+        <!-- Estos enlaces afuturo deberían entregar un resumen de busqueda interna con tarjetas y sugerencia para el usuario -->
+        <div class="footer-section">
+            <h4>Explorar</h4>
+                <a href="#">Librerías populares</a>
+                <a href="#">Espacios de estudio</a>
+                <a href="#">Cafés literarios</a>
+                <a href="#">Eventos culturales</a>
+                <a href="#">Novedades</a>
+        </div>
+
+        <!-- Para Propietarios -->
+        <!-- Estos enlaces luego se desarrollarán -->
+        <div class="footer-section">
+            <h4>Para Propietarios</h4>
+            <a href="registro.html">Registrar librería</a>
+            <a href="#">Panel de gestión</a>
+            <a href="#">Guía de optimización</a>
+            <a href="#">Recursos promocionales</a>
+            <a href="#">Soporte técnico</a>
+        </div>
+
+        <!-- Contacto -->
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <a href="mailto:hola@libraryspotlight.com">hola@libraryspotlight.com</a>
+            <p>+54 11 1234-5678</p>
+            <p>Buenos Aires, Argentina<br>Disponible en toda Latinoamérica</p>
+        </div>
+        </div>
+
+        <!-- Linea divisoria -->
+        <hr>
+
+        <!-- Parte Inferior -->
+        <!-- SOlo crearé el enlace Blog, luego se deben crear otras páginas con información importante legal -->
+        <div class="footer-bottom">
+            <div class="legal-links">
+            <a href="#">Términos de uso</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Cookies</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <p>&copy; 2024 LibrarySpotlight. Todos los derechos reservados.</p>
+        </div>
+     </footer>
+</body>
+</html>

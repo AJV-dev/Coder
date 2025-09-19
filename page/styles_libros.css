@@ -1,0 +1,6 @@
+
+/* Contenido Relleno - Acá debería colocar el CSS para cada página en particular */
+/* Empuja el contenido para que no quede debajo del header */
+main {
+  margin-top: 70px;
+}

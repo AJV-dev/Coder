@@ -1,0 +1,425 @@
+<!DOCTYPE html> <!-- Define el documento como HTML5 -->
+<html lang="en"> <!-- Idioma del documento: español -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres (soporta acentos) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsive en móviles -->
+    <title>LibrerySpotlight - Eventos</title> <!-- Título que aparece en la pestaña del navegador -->
+    
+    <!-- Enlaces a los CSS personalizados -->
+    <link rel="stylesheet" href="../styles_h&f.css">
+    <link rel="stylesheet" href="styles_eventos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Enlace a Bootstrap CSS (CDN). Provee grid, utilidades y componentes listos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Enlace a Bootstrap Icons (CDN) para usar iconos con clases "bi bi-..." -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- El header se repite en las otras paginas -->
+    <header class="header">
+    <!-- Logo -->
+        <div class="logo">
+            <a href="../index.html">
+            <img src="../img/logo/Logo_LibrarySpotlight.png" alt="Logo LibrarySpotlight">
+            </a>
+            <span></span>
+        </div>
+
+    <!-- Navegación -->
+        <nav class="nav">
+            <a href="libros.html">Libros</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+
+    <!-- Acciones para Registros -->
+        <div class="actions">
+            <a href="sesion.html" class="login">Iniciar Sesión</a>
+            <a href="registro.html" class="btn-register">Registrar Librerías</a>
+        </div>
+    </header>
+
+    <!-- ======= DESARROLLO CUERPO CENTRAL DE PAGINA EVENTOS ======= -->
+   
+    <main>
+    <!-- ======= ENCABEZADO PRINCIPAL ======= -->
+    <div class="container text-center mt-4"> <!-- container: centro y padding lateral; text-center: centra texto; mt-4: margen superior -->
+    <h2 class="fw-bold">Eventos Literarios</h2> <!-- fw-bold: texto en negrita -->
+    <p class="text-muted">Ferias, talleres, clubes de lectura y encuentros culturales</p> <!-- text-muted: color gris claro -->
+     </div>
+
+    <!-- ======= FILTROS / BOTONES DE CATEGORÍAS ======= -->
+    <div class="container text-center my-4"> <!-- my-4: margen vertical -->
+    <div class="btn-group" role="group"> <!-- btn-group agrupa botones en una fila con distribución -->
+      <button class="btn btn-filter active">Todos</button> <!-- btn: estilo botón; btn-filter: estilo personalizado; active: estado activo -->
+      <button class="btn btn-filter" a href="#">Ferias</button> <!-- Estos botones deberían poder traer busquedas con filtros preestablecidos -->
+      <button class="btn btn-filter" a href="#">Clubes</button>
+      <button class="btn btn-filter" a href="#">Talleres</button>
+      <button class="btn btn-filter" a href="#">Cultural</button>
+      <button class="btn btn-filter" a href="#">Conferencias</button>
+    </div>
+    </div>
+
+    <!-- ======= SECCIÓN: EVENTOS DESTACADOS (tarjetas en tres columnas en md+) ======= -->
+    <div class="container my-4"> <!-- contenedor con separación vertical -->
+        <h5 class="fw-bold mb-3">Eventos Destacados</h5> <!-- Título de sección -->
+        <div class="row g-4"> <!-- row: fila del grid; g-4: gutter (espacio) entre columnas -->
+      
+      <!-- --- TARJETA 1 (columna) --- -->
+      <div class="col-md-4"> <!-- col-md-4: ocupa 4/12 columnas en pantallas >= md (apila en xs/sm) -->
+        <div class="card event-card h-100"> <!-- card: componente visual; h-100 para igualar altura en la fila -->
+          <div class="card-body"> <!-- card-body: padding interno de la card -->
+            <span class="badge bg-success">Feria</span> <!-- badge: etiqueta pequeña; bg-success: fondo verde -->
+            <span class="float-end text-warning"><i class="bi bi-star-fill"></i> 4.9</span> <!-- float-end: sitúa a la derecha -->
+            <h6 class="fw-bold mt-2">Feria Internacional del Libro Buenos Aires 2026</h6> <!-- título del evento -->
+            <ul class="list-unstyled small text-muted mb-2"> <!-- list-unstyled: sin bullets; small: texto pequeño -->
+              <li><i class="bi bi-calendar-event"></i> miércoles, 18 de marzo de 2026</li>
+              <li><i class="bi bi-clock"></i> 10:00 - 21:00</li>
+              <li><i class="bi bi-geo-alt"></i> La Rural - Predio Ferial</li>
+              <li><i class="bi bi-people"></i> 500,000+ visitantes esperados</li>
+            </ul>
+            <p class="small text-muted">La feria del libro más importante de Argentina. Más de 1,200 stands, presentaciones de libros, charlas con autores y más...</p>
+            <p class="fw-semibold">Entrada: $2,500</p> <!-- fw-semibold: peso intermedio en fuente -->
+            <a href="#" class="btn btn-success w-100">Más información</a> <!-- btn-success: botón verde; w-100: ancho 100% -->
+          </div>
+        </div>
+      </div>
+
+      <!-- --- TARJETA 2 (columna) --- -->
+      <div class="col-md-4">
+        <div class="card event-card h-100">
+          <div class="card-body">
+            <span class="badge bg-primary">Evento Cultural</span>
+            <span class="float-end text-warning"><i class="bi bi-star-fill"></i> 4.8</span>
+            <h6 class="fw-bold mt-2">Noche de Poesía en Vivo</h6>
+            <ul class="list-unstyled small text-muted mb-2">
+              <li><i class="bi bi-calendar-event"></i> jueves, 23 de abril de 2026</li>
+              <li><i class="bi bi-clock"></i> 20:30 - 23:00</li>
+              <li><i class="bi bi-geo-alt"></i> Café Tortoni Literario</li>
+              <li><i class="bi bi-people"></i> Aforo: 80 personas</li>
+            </ul>
+            <p class="small text-muted">Velada poética con autores emergentes y consagrados. Música en vivo y ambiente íntimo.</p>
+            <p class="fw-semibold">Entrada: $1,800 (incluye consumición)</p>
+            <a href="#" class="btn btn-success w-100">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- --- TARJETA 3 (columna) --- -->
+      <div class="col-md-4">
+        <div class="card event-card h-100">
+          <div class="card-body">
+            <span class="badge bg-info text-dark">Conferencia</span> <!-- bg-info: color claro; text-dark para legibilidad -->
+            <span class="float-end text-warning"><i class="bi bi-star-fill"></i> 4.9</span>
+            <h6 class="fw-bold mt-2">Encuentro de Escritoras Argentinas</h6>
+            <ul class="list-unstyled small text-muted mb-2">
+              <li><i class="bi bi-calendar-event"></i> domingo, 17 de mayo de 2026</li>
+              <li><i class="bi bi-clock"></i> 14:00 - 18:30</li>
+              <li><i class="bi bi-geo-alt"></i> Centro Cultural Recoleta</li>
+              <li><i class="bi bi-people"></i> Auditorio para 400 personas</li>
+            </ul>
+            <p class="small text-muted">Mesa redonda con las voces femeninas más importantes de la literatura argentina contemporánea.</p>
+            <p class="fw-semibold">Entrada: $3,200</p>
+            <a href="#" class="btn btn-success w-100">Más información</a>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- cierre row -->
+    </div> <!-- cierre container -->
+
+    <!-- ======= SECCIÓN: PRÓXIMOS EVENTOS (lista más detallada) ======= -->
+    <div class="container my-5">
+        <h5 class="fw-bold mb-3">Próximos Eventos</h5>
+
+    <!-- --- Evento grande (card1) con layout en 2 columnas en md+ --- -->
+    <div class="card mb-3 event-card"> <!-- mb-3: margen inferior -->
+      <div class="card-body d-md-flex justify-content-between align-items-start">
+        <!-- d-md-flex: en pantallas md+ aplica display:flex, en menores apila en columna -->
+        <!-- justify-content-between: separa el contenido principal del área de acciones -->
+        <div class="me-3"> <!-- me-3: margin-end (derecha) para separar del panel derecho -->
+          <div class="mb-2">
+            <span class="badge bg-success">Feria</span>
+            <span class="badge bg-secondary">General</span>
+            <span class="badge bg-warning text-dark">Destacado</span>
+          </div>
+          <h6 class="fw-bold">Feria Internacional del Libro Buenos Aires 2026</h6>
+          <p class="small text-muted">La feria del libro más importante de Argentina. Más de 1,200 stands, presentaciones de libros, charlas con autores y actividades para toda la familia.</p>
+          <ul class="list-unstyled small text-muted mb-2">
+            <li><i class="bi bi-calendar-event"></i> miércoles, 18 de marzo de 2026</li>
+            <li><i class="bi bi-clock"></i> 10:00 - 21:00</li>
+            <li><i class="bi bi-geo-alt"></i> La Rural - Predio Ferial</li>
+            <li><i class="bi bi-people"></i> 500,000+ visitantes esperados</li>
+          </ul>
+
+          <!-- Tags / badges secundarios en fila y que envuelven (flex-wrap) -->
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-light text-dark">Pabellón de honor: España</span>
+            <span class="badge bg-light text-dark">Más de 300 actividades</span>
+            <span class="badge bg-light text-dark">Área infantil</span>
+            <span class="badge bg-light text-dark">Café literario</span>
+          </div>
+        </div>
+
+        <!-- Panel derecho con precio, valoración y botones -->
+        <div class="text-end mt-3 mt-md-0"> <!-- text-end: alinea texto a la derecha; mt-md-0: sin margen superior en md+ -->
+          <p class="fw-semibold">Entrada: $2,500</p>
+          <p class="text-warning small"><i class="bi bi-star-fill"></i> 4.9 <span class="text-muted">Valoración</span></p>
+          <button class="btn btn-success w-100 mb-2">Reservar lugar</button> <!-- mb-2: separación -->
+          <button class="btn btn-outline-success w-100">Más detalles</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- --- Otro evento (card2) --- -->
+    <div class="card mb-3 event-card">
+      <div class="card-body d-md-flex justify-content-between align-items-start">
+        <div class="me-3">
+          <div class="mb-2">
+            <span class="badge bg-secondary">Club de Lectura</span>
+            <span class="badge bg-secondary">Literatura</span>
+          </div>
+          <h6 class="fw-bold">Club de Lectura: Borges y el Infinito</h6>
+          <p class="small text-muted">Análisis profundo de los cuentos de Borges. Discusión grupal sobre 'El Aleph' y 'La Biblioteca de Babel'.</p>
+          <ul class="list-unstyled small text-muted mb-2">
+            <li><i class="bi bi-calendar-event"></i> jueves, 16 de abril de 2026</li>
+            <li><i class="bi bi-clock"></i> 19:00 - 21:00</li>
+            <li><i class="bi bi-geo-alt"></i> Biblioteca Borges Íntima</li>
+            <li><i class="bi bi-people"></i> Cupos limitados: 15 personas</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-light text-dark">Moderado por especialista</span>
+            <span class="badge bg-light text-dark">Material incluido</span>
+            <span class="badge bg-light text-dark">Café y medialunas</span>
+            <span class="badge bg-light text-dark">Certificado de participación</span>
+          </div>
+        </div>
+
+        <div class="text-end mt-3 mt-md-0">
+          <p class="fw-semibold text-success">Gratis</p>
+          <p class="text-warning small"><i class="bi bi-star-fill"></i> 4.7 <span class="text-muted">Valoración</span></p>
+          <button class="btn btn-success w-100 mb-2">Reservar lugar</button>
+          <button class="btn btn-outline-success w-100">Más detalles</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- --- Otro evento (card3) --- -->
+    <div class="card mb-3 event-card"> <!-- mb-3: margen inferior -->
+      <div class="card-body d-md-flex justify-content-between align-items-start">
+        <!-- d-md-flex: en pantallas md+ aplica display:flex, en menores apila en columna -->
+        <!-- justify-content-between: separa el contenido principal del área de acciones -->
+        <div class="me-3"> <!-- me-3: margin-end (derecha) para separar del panel derecho -->
+          <div class="mb-2">
+            <span class="badge bg-success">Evento Cultural</span>
+            <span class="badge bg-secondary">Poesía</span>
+            <span class="badge bg-warning text-dark">Destacado</span>
+          </div>
+          <h6 class="fw-bold">Noche de posesía en vivo</h6>
+          <p class="small text-muted">Velada poética con autores emergentes y consagrados. Música en vivo y ambiente íntimo.</p>
+          <ul class="list-unstyled small text-muted mb-2">
+            <li><i class="bi bi-calendar-event"></i> miércoles, 13 de mayo de 2026</li>
+            <li><i class="bi bi-clock"></i> 20:30 - 23:00</li>
+            <li><i class="bi bi-geo-alt"></i> Café Tortoni Literario</li>
+            <li><i class="bi bi-people"></i> Aforo: 80 personas</li>
+          </ul>
+
+          <!-- Tags / badges secundarios en fila y que envuelven (flex-wrap) -->
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-light text-dark">Micrófono abierto</span>
+            <span class="badge bg-light text-dark">Música en vivo</span>
+            <span class="badge bg-light text-dark">Drinks temáticos</span>
+            <span class="badge bg-light text-dark">Ambiente hisstórico</span>
+          </div>
+        </div>
+
+        <!-- Panel derecho con precio, valoración y botones -->
+        <div class="text-end mt-3 mt-md-0"> <!-- text-end: alinea texto a la derecha; mt-md-0: sin margen superior en md+ -->
+          <p class="fw-semibold">Entrada: $5,800 (Incluye consimición)</p>
+          <p class="text-warning small"><i class="bi bi-star-fill"></i> 4.8 <span class="text-muted">Valoración</span></p>
+          <button class="btn btn-success w-100 mb-2">Reservar lugar</button> <!-- mb-2: separación -->
+          <button class="btn btn-outline-success w-100">Más detalles</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- --- Otro evento (card4) --- -->
+    <div class="card mb-3 event-card">
+      <div class="card-body d-md-flex justify-content-between align-items-start">
+        <div class="me-3">
+          <div class="mb-2">
+            <span class="badge bg-secondary">Taller</span>
+            <span class="badge bg-secondary">Educación</span>
+          </div>
+          <h6 class="fw-bold">Taller de escritura creativa</h6>
+          <p class="small text-muted">Taller intensivo de 3 horas para desarrollar técnicas narrativas y superar el bloqueo creativo.</p>
+          <ul class="list-unstyled small text-muted mb-2">
+            <li><i class="bi bi-calendar-event"></i> domingo, 21 de junio de 2026</li>
+            <li><i class="bi bi-clock"></i> 15:00 - 18:00</li>
+            <li><i class="bi bi-geo-alt"></i> Espacio Cultural Libro</li>
+            <li><i class="bi bi-people"></i> Máximo: 12 participantes</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-light text-dark">Ejercicios Práctivos</span>
+            <span class="badge bg-light text-dark">Feddback personalizado</span>
+            <span class="badge bg-light text-dark">kit de escritor</span>
+            <span class="badge bg-light text-dark">Certificado de participación</span>
+          </div>
+        </div>
+
+        <div class="text-end mt-3 mt-md-0">
+          <p class="fw-semibold text-success">Inscripción: $4,500 (materiales incluídos)</p>
+          <p class="text-warning small"><i class="bi bi-star-fill"></i> 4.6 <span class="text-muted">Valoración</span></p>
+          <button class="btn btn-success w-100 mb-2">Reservar lugar</button>
+          <button class="btn btn-outline-success w-100">Más detalles</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- --- Otro evento (card5) --- -->
+    <div class="card mb-3 event-card"> <!-- mb-3: margen inferior -->
+      <div class="card-body d-md-flex justify-content-between align-items-start">
+        <!-- d-md-flex: en pantallas md+ aplica display:flex, en menores apila en columna -->
+        <!-- justify-content-between: separa el contenido principal del área de acciones -->
+        <div class="me-3"> <!-- me-3: margin-end (derecha) para separar del panel derecho -->
+          <div class="mb-2">
+            <span class="badge bg-success">Feria</span>
+            <span class="badge bg-secondary">Independiente</span>
+          </div>
+          <h6 class="fw-bold">Feria del Libro Independiente</h6>
+          <p class="small text-muted">Celebración de editoriales independientes y librerías de barrio. Arte, música y literatura alternativa.</p>
+          <ul class="list-unstyled small text-muted mb-2">
+            <li><i class="bi bi-calendar-event"></i> miércoles, 8 de julio de 2026</li>
+            <li><i class="bi bi-clock"></i> 11:00 - 20:00</li>
+            <li><i class="bi bi-geo-alt"></i> Plaza San Martín</li>
+            <li><i class="bi bi-people"></i> Esperados: 10,000 visitantes</li>
+          </ul>
+
+          <!-- Tags / badges secundarios en fila y que envuelven (flex-wrap) -->
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-light text-dark">50+ editoriales Indep.</span>
+            <span class="badge bg-light text-dark">Música en vivo</span>
+            <span class="badge bg-light text-dark">Food Trucks</span>
+            <span class="badge bg-light text-dark">Talleres gratuitos</span>
+          </div>
+        </div>
+
+        <!-- Panel derecho con precio, valoración y botones -->
+        <div class="text-end mt-3 mt-md-0"> <!-- text-end: alinea texto a la derecha; mt-md-0: sin margen superior en md+ -->
+          <p class="fw-semibold">Entrada libre y gratuita</p>
+          <p class="text-warning small"><i class="bi bi-star-fill"></i> 4.5 <span class="text-muted">Valoración</span></p>
+          <button class="btn btn-success w-100 mb-2">Reservar lugar</button> <!-- mb-2: separación -->
+          <button class="btn btn-outline-success w-100">Más detalles</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- --- Otro evento (card6) --- -->
+    <div class="card mb-3 event-card">
+      <div class="card-body d-md-flex justify-content-between align-items-start">
+        <div class="me-3">
+          <div class="mb-2">
+            <span class="badge bg-secondary">Conferencia</span>
+            <span class="badge bg-secondary">Literatura</span>
+            <span class="badge bg-warning text-dark">Destacado</span>
+          </div>
+          <h6 class="fw-bold">Encuentro de escritoras Argentinas</h6>
+          <p class="small text-muted">Mesa redonda con las voces femeninas mas importantes de la literatura argentina contemporánea.</p>
+          <ul class="list-unstyled small text-muted mb-2">
+            <li><i class="bi bi-calendar-event"></i> jueves, 23 de julio de 2026</li>
+            <li><i class="bi bi-clock"></i> 14:00 - 18:30</li>
+            <li><i class="bi bi-geo-alt"></i> Centro Cultural Recoleta</li>
+            <li><i class="bi bi-people"></i> Auditorio para 400 personas</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-light text-dark">6 escritoras reconocidas</span>
+            <span class="badge bg-light text-dark">Sesión de autógrafos</span>
+            <span class="badge bg-light text-dark">Wine & Cheese</span>
+            <span class="badge bg-light text-dark">Transmisión on-line</span>
+          </div>
+        </div>
+
+        <div class="text-end mt-3 mt-md-0">
+          <p class="fw-semibold text-success">Entrada: $4,300</p>
+          <p class="text-warning small"><i class="bi bi-star-fill"></i> 4.9 <span class="text-muted">Valoración</span></p>
+          <button class="btn btn-success w-100 mb-2">Reservar lugar</button>
+          <button class="btn btn-outline-success w-100">Más detalles</button>
+        </div>
+      </div>
+    </div>
+
+    </div> <!-- cierre container (Próximos eventos) -->
+
+    <!-- ======= SCRIPTS ======= -->
+    <!-- Bootstrap JS (bundle incluye Popper) para componentes interactivos si los usas -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    </main>
+
+    <!-- Footer se repetirá -->
+     <footer class="footer">
+        <div class="footer-container">
+
+        <!-- Logo y descripción -->
+        <div class="footer-section footer-logo">
+            <img class="img" src="../img/logo/Logo_LS_verde.png" alt="">
+            <p>Descubrí librerías únicas para cada momento. Tu próxima experiencia literaria te está esperando.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        </div>
+
+        <!-- Explorar -->
+        <!-- Estos enlaces afuturo deberían entregar un resumen de busqueda interna con tarjetas y sugerencia para el usuario -->
+        <div class="footer-section">
+            <h4>Explorar</h4>
+                <a href="#">Librerías populares</a>
+                <a href="#">Espacios de estudio</a>
+                <a href="#">Cafés literarios</a>
+                <a href="#">Eventos culturales</a>
+                <a href="#">Novedades</a>
+        </div>
+
+        <!-- Para Propietarios -->
+        <!-- Estos enlaces luego se desarrollarán -->
+        <div class="footer-section">
+            <h4>Para Propietarios</h4>
+            <a href="registro.html">Registrar librería</a>
+            <a href="#">Panel de gestión</a>
+            <a href="#">Guía de optimización</a>
+            <a href="#">Recursos promocionales</a>
+            <a href="#">Soporte técnico</a>
+        </div>
+
+        <!-- Contacto -->
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <a href="mailto:hola@libraryspotlight.com">hola@libraryspotlight.com</a>
+            <p>+54 11 1234-5678</p>
+            <p>Buenos Aires, Argentina<br>Disponible en toda Latinoamérica</p>
+        </div>
+        </div>
+
+        <!-- Linea divisoria -->
+        <hr>
+
+        <!-- Parte Inferior -->
+        <!-- SOlo crearé el enlace Blog, luego se deben crear otras páginas con información importante legal -->
+        <div class="footer-bottom">
+            <div class="legal-links">
+            <a href="#">Términos de uso</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Cookies</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <p>&copy; 2024 LibrarySpotlight. Todos los derechos reservados.</p>
+        </div>
+     </footer>
+</body>
+</html>

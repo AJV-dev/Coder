@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibrerySpotlight - Sesión</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Archivo CSS para head y footer -->
+    <link rel="stylesheet" href="../styles_h&f.css">
+    <!-- Archivo CSS para sesión -->
+    <link rel="stylesheet" href="styles_sesion.css">
+    <!-- Linkeo a iconos utilizados en el footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- El header se repite en la otras paginas -->
+    <header class="header">
+    <!-- Logo -->
+        <div class="logo">
+            <a href="../index.html">
+            <img src="../img/logo/Logo_LibrarySpotlight.png" alt="Logo LibrarySpotlight">
+            </a>
+            <span></span>
+        </div>
+
+    <!-- Navegación -->
+        <nav class="nav">
+            <a href="libros.html">Libros</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+
+    <!-- Acciones para Registros -->
+        <div class="actions">
+            <a href="sesion.html" class="login">Iniciar Sesión</a>
+            <a href="registro.html" class="btn-register">Registrar Librerías</a>
+        </div>
+    </header>
+
+    <!-- Contenido de la pagina - Formulario Inicia Sesión -->
+
+    <main>
+    <body>
+    <div class="container"> <!-- Bootstrap: contenedor central -->
+    <div class="card login-card p-4"> <!-- "card" con padding interno de 4 -->
+      
+      <!-- Ícono de libro -->
+      <div class="text-center mb-3"> <!-- text-center centra el contenido, mb-3 = margin-bottom -->
+        <i class="bi bi-book login-icon"></i> <!-- Ícono de libro usando Bootstrap Icons -->
+      </div>
+
+      <!-- Título -->
+      <h5 class="text-center fw-bold">Iniciar Sesión</h5> <!-- fw-bold = texto en negrita -->
+      <p class="text-center text-muted">Accede a tu cuenta de LibrarySpotlight</p> <!-- text-muted = color gris -->
+
+      <!-- Formulario -->
+      <form>
+        <!-- Campo Correo -->
+        <div class="mb-3"> <!-- mb-3 = margen inferior -->
+          <label class="form-label">Correo electrónico</label> <!-- form-label = estilo Bootstrap para labels -->
+          <div class="input-group"> <!-- input-group = agrupa íconos e inputs -->
+            <span class="input-group-text"><i class="bi bi-envelope"></i></span> <!-- Ícono a la izquierda -->
+            <input type="email" class="form-control" placeholder="tú@email.com"> <!-- form-control estiliza input -->
+          </div>
+        </div>
+
+        <!-- Campo Contraseña -->
+        <div class="mb-3">
+          <label class="form-label">Contraseña</label>
+          <div class="input-group"> <!-- Agrupa ícono, input y botón -->
+            <span class="input-group-text"><i class="bi bi-lock"></i></span> <!-- Ícono de candado -->
+            <input type="password" class="form-control" id="passwordInput" placeholder="•••••••"> <!-- Input de contraseña -->
+            <!-- Botón para mostrar/ocultar contraseña -->
+            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+              <i class="bi bi-eye"></i> <!-- Ícono de ojo -->
+            </button>
+          </div>
+        </div>
+
+        <!-- Opciones: Recordarme y Olvidé mi contraseña -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <!-- Checkbox Recordarme -->
+          <div class="form-check"> <!-- form-check = estilo Bootstrap para checkbox -->
+            <input class="form-check-input" type="checkbox" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Recordarme</label>
+          </div>
+          <!-- Enlace a recuperar contraseña - Esto se desarrollará a futuro -->
+          <a href="#" class="small text-decoration-none">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <!-- Botón de Iniciar sesión -->
+        <div class="d-grid mb-3"> <!-- d-grid = display grid (botón ocupa 100% ancho) -->
+          <button type="submit" class="btn btn-login">Iniciar Sesión</button>
+        </div>
+      </form>
+
+      <!-- Línea divisoria -->
+      <div class="divider"><span>O CONTINÚA CON</span></div>
+
+      <!-- Botones sociales -->
+      <div class="d-flex gap-2"> <!-- d-flex = flexbox, gap-2 = espacio entre botones -->
+        <button class="btn btn-social w-50"><i class="bi bi-google me-2"></i>Google</button> <!-- w-50 = 50% ancho -->
+        <button class="btn btn-social w-50"><i class="bi bi-twitter me-2"></i>Twitter</button>
+      </div>
+
+      <!-- Enlace a Registro -->
+      <p class="text-center text-muted mt-4">
+        ¿No tienes una cuenta? <a href="registro.html" class="fw-semibold">Regístrate aquí</a>
+      </p>
+    </div>
+  </div>
+  </body>
+  </main>
+
+    <!-- Footer se repetirá -->
+     <footer class="footer">
+        <div class="footer-container">
+
+        <!-- Logo y descripción -->
+        <div class="footer-section footer-logo">
+            <img class="img" src="../img/logo/Logo_LS_verde.png" alt="">
+            <p>Descubrí librerías únicas para cada momento. Tu próxima experiencia literaria te está esperando.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        </div>
+
+        <!-- Explorar -->
+        <!-- Estos enlaces afuturo deberían entregar un resumen de busqueda interna con tarjetas y sugerencia para el usuario -->
+        <div class="footer-section">
+            <h4>Explorar</h4>
+                <a href="#">Librerías populares</a>
+                <a href="#">Espacios de estudio</a>
+                <a href="#">Cafés literarios</a>
+                <a href="#">Eventos culturales</a>
+                <a href="#">Novedades</a>
+        </div>
+
+        <!-- Para Propietarios -->
+        <!-- Estos enlaces luego se desarrollarán -->
+        <div class="footer-section">
+            <h4>Para Propietarios</h4>
+            <a href="registro.html">Registrar librería</a>
+            <a href="#">Panel de gestión</a>
+            <a href="#">Guía de optimización</a>
+            <a href="#">Recursos promocionales</a>
+            <a href="#">Soporte técnico</a>
+        </div>
+
+        <!-- Contacto -->
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <a href="mailto:hola@libraryspotlight.com">hola@libraryspotlight.com</a>
+            <p>+54 11 1234-5678</p>
+            <p>Buenos Aires, Argentina<br>Disponible en toda Latinoamérica</p>
+        </div>
+        </div>
+
+        <!-- Linea divisoria -->
+        <hr>
+
+        <!-- Parte Inferior -->
+        <!-- SOlo crearé el enlace Blog, luego se deben crear otras páginas con información importante legal -->
+        <div class="footer-bottom">
+            <div class="legal-links">
+            <a href="#">Términos de uso</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Cookies</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <p>&copy; 2024 LibrarySpotlight. Todos los derechos reservados.</p>
+        </div>
+     </footer>
+</body>
+</html>

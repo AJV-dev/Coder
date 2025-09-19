@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibrarySpotlight</title>
+    <link rel="stylesheet" href="styles_h&f.css">
+    <link rel="stylesheet" href="styles_index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head> 
+
+<body> 
+    <!-- El Header que se repetirá en todas las páginas y quedará fijado para facilitar la navegación -->
+    <header class="header">
+     <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/logo/Logo_LibrarySpotlight.png" alt="Logo LibrarySpotlight">
+            </a>
+            <span></span>
+        </div>
+
+        <!-- Navegación entre paginads principales-->
+        <nav class="nav">
+            <a href="page/libros.html">Libros</a>
+            <a href="page/eventos.html">Eventos</a>
+            <a href="page/favoritos.html">Favoritos</a>
+            <a href="page/blog.html">Blog</a>
+        </nav>
+
+        <!-- Acciones para Registro e inicio de sesión -->
+        <div class="actions">
+            <a href="page/sesion.html" class="login">Iniciar Sesión</a>
+            <a href="page/registro.html" class="btn-register">Registrar Librerías</a>
+        </div>
+    </header>
+
+
+<!-- Contenido en la página Index -->
+   <main>
+
+    <!-- HERO SECTION DESARROLLO DE LA PORTADA Y TITULO-->
+    <section class="hero">
+      <img src="img/card grande/fodo_index.jpg" alt="imágen transparente de fondo" class="hero-bg">
+      <div class="hero-content">
+        <h1>Descubrí librerías para <span>cada momento</span></h1>
+        <p>Encontrá miles de librerías únicas para estudiar, trabajar, relajarte, 
+           buscar ese libro especial y mucho más.</p>
+
+        <!-- Barra de búsqueda -->
+        <div class="search-box">
+          <input type="text" placeholder="Ej: espacio silencioso, café con libro...">
+          <input type="text" placeholder="Ciudad, barrio o zona...">
+          <button>Buscar Librerías</button>
+        </div>
+
+        <!-- Texto de estadísticas para reflejar confianza -->
+        <p class="search-info">
+          Busca entre <strong>+500 librerías únicas</strong> • <strong>+50 ciudades</strong> • <strong>+10 países</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE LIBRERÍAS PROPUESTAS-->
+    <section class="libraries">
+
+      <!-- Filtros pre ofrecidos -->
+      <div class="filters">
+        <button class="active">Libros</button>
+        <button>Estudio</button>
+        <button>Trabajo</button>
+        <button>Café Literario</button>
+        <button>Encuentros</button>
+        <button>Romance</button>
+      </div>
+
+      <!-- Tarjetas pequeñas con visualización de datos principales -->
+      <div class="library-cards-small">
+        <div class="card">
+          <h3>Biblioteca Nacional</h3>
+          <p>Centro, Buenos Aires</p>
+          <p>⭐ 4.9 (521) • 9:00 - 21:00</p>
+          <div class="tags">
+            <span>Patrimonio</span><span>Investigación</span><span>Silenciosa</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Ateneo Grand Splendid</h3>
+          <p>Recoleta, Buenos Aires</p>
+          <p>⭐ 4.8 (892) • 9:00 - 22:00</p>
+          <div class="tags">
+            <span>Histórica</span><span>Arquitectura</span><span>Turística</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Biblioteca Cervantes</h3>
+          <p>Barracas, Buenos Aires</p>
+          <p>⭐ 4.7 (234) • 8:30 - 20:00</p>
+          <div class="tags">
+            <span>Literatura</span><span>Clásicos</span><span>Tranquila</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Casa de Lectura</h3>
+          <p>La Boca, Buenos Aires</p>
+          <p>⭐ 4.6 (187) • 10:00 - 18:00</p>
+          <div class="tags">
+            <span>Comunitaria</span><span>Talleres</span><span>Familiar</span>
+          </div>
+        </div>
+
+        <!-- Aca se podrían agrgar mas targetas, pero creo que 4 estan bien -->
+      </div>
+
+      <!-- Librerías Populares y Recomendaciones para el usuario dudoso -->
+      <h2 class="popular-title">Librerías populares cerca tuyo</h2>
+     
+      <!-- Tarjetas Grandes de sitios cercanos a donde te encuentras -->
+      <div class="library-cards-big">
+
+        <!-- Ej 1: Biblioteca Central Borges -->
+        <div class="card-big">
+          <img src="img/card grande/Biblioteca_Centra_Borges_Buenos_Aires_1.jpg" alt="Biblioteca Central Borges">
+            <div class="card-info">
+            <h3>Biblioteca Central Borges</h3>
+            <p>Recoleta, Buenos Aires</p>
+            <p>⭐ 4.8 (324) • 9:00 - 20:00</p>
+            <div class="tags">
+              <span>Silenciosa</span><span>WiFi</span><span>Estudio</span>
+            </div>
+            </div>
+            <span class="badge">Gratis</span>
+        </div>
+
+        <!-- Ej 2: Libros & Café Literario -->
+  <div class="card-big">
+    <img src="img/card grande/Libros_&_Café_Literarios Buenos Aires 1.jpeg" alt="Libros & Café Literario">
+    <div class="card-info">
+      <h3>Libros & Café Literario</h3>
+      <p>Palermo, Buenos Aires</p>
+      <p>⭐ 4.6 (189) • 8:00 - 19:00</p>
+      <div class="tags">
+        <span>Café</span><span>Coworking</span><span>WiFi</span>
+      </div>
+    </div>
+    <span class="badge price">$500/hora</span>
+  </div>
+
+  <!-- Ej 3: La Casa de los Libros -->
+  <div class="card-big">
+    <img src="img/card grande/La_casa_de_los_Libros_Buenos_Aires_1.jpg" alt="La Casa de los Libros">
+    <div class="card-info">
+      <h3>La Casa de los Libros</h3>
+      <p>San Telmo, Buenos Aires</p>
+      <p>⭐ 4.9 (256) • 10:00 - 20:00</p>
+      <div class="tags">
+        <span>Independiente</span><span>Eventos</span><span>Acogedor</span>
+      </div>
+    </div>
+    <span class="badge price">$430/hora</span>
+  </div>
+
+  <!-- Ej 4: Biblioteca Universitaria -->
+  <div class="card-big">
+    <img src="img/card grande/Biblioteca_Universitaria_Buenos_Aires_1.jpg" alt="Biblioteca Universitaria">
+    <div class="card-info">
+      <h3>Biblioteca Universitaria</h3>
+      <p>Ciudad Universitaria, Buenos Aires</p>
+      <p>⭐ 4.7 (412) • 24 horas</p>
+      <div class="tags">
+        <span>24hs</span><span>Estudio</span><span>Recursos</span>
+      </div>
+    </div>
+    <span class="badge">Gratis</span>
+  </div>
+</div>
+
+      <!-- También aca se podrías sumar mas tarjetas grandes -->
+      </div>
+
+      <div class="view-more">
+        <a href="#">Ver todas las librerías →</a>
+      </div>
+    </section>
+
+  </main>
+
+
+    <!-- El Footer se repetira en todas las páginas para facilitar la navegación -->
+    <footer class="footer">
+        <div class="footer-container">
+
+         <!-- Logo y descripción -->
+        <div class="footer-section footer-logo">
+            <img class="img" src="img/logo/Logo_LS_verde.png" alt="">
+            <p>Descubrí librerías únicas para cada momento. Tu próxima experiencia literaria te está esperando.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        </div>
+
+        <!-- Explorar --> 
+        <!-- Estos enlaces a futuro deberían entregar un resumen de busqueda interna con tarjetas y sugerencia para el usuario -->
+        <div class="footer-section">
+            <h4>Explorar</h4>
+                <a href="#">Librerías populares</a>
+                <a href="#">Espacios de estudio</a>
+                <a href="#">Cafés literarios</a>
+                <a href="#">Eventos culturales</a>
+                <a href="#">Novedades</a>
+        </div>
+
+        <!-- Para propietarios -->
+        <!-- Estos enlaces luego se desarrollarán -->
+        <div class="footer-section">
+            <h4>Para Propietarios</h4>
+            <a href="page/registro.html">Registrar librería</a>
+            <a href="#">Panel de gestión</a>
+            <a href="#">Guía de optimización</a>
+            <a href="#">Recursos promocionales</a>
+            <a href="#">Soporte técnico</a>
+        </div>
+
+        <!-- Contacto -->
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <a href="mailto:hola@libraryspotlight.com">hola@libraryspotlight.com</a>
+            <p>+54 11 1234-5678</p>
+            <p>Buenos Aires, Argentina<br>Disponible en toda Latinoamérica</p>
+        </div>
+        </div>
+
+        <!-- Línea divisoria -->
+        <hr>
+
+        <!-- Parte inferior -->
+        <!-- SOlo crearé el enlace Blog, luego se deben crear otras páginas con información importante legal -->
+        <div class="footer-bottom">
+            <div class="legal-links">
+            <a href="#">Términos de uso</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Cookies</a>
+            <a href="page/blog.html">Blog</a>
+        </div>
+        <p>&copy; 2024 LibrarySpotlight. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
