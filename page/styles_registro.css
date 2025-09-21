@@ -1,6 +1,7 @@
 
 /* Contenido Relleno - Acá debería colocar el CSS para cada página en particular */
 /* Empuja el contenido para que no quede debajo del header */
+
 main {
   margin-top: 120px;    /* Margen superior de toda la caja */
   margin-bottom: 70px;    /* Margen inferior de toda la caja */
