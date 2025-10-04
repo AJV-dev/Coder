@@ -1,0 +1,24 @@
+
+/* Crea funciones reutilizables (flex, media queries, transiciones) */
+
+// Mixin para flex centrado
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Mixin para transiciones suaves
+@mixin transition($time: 0.3s) {
+  transition: all $time ease;
+}
+
+// Mixin para media queries
+@mixin responsive($break) {
+  @if $break == mobile {
+    @media (max-width: 600px) { @content; }
+  } @else if $break == tablet {
+    @media (max-width: 992px) { @content; }
+  }
+}

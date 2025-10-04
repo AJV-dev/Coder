@@ -1,0 +1,72 @@
+
+/* Barra de búsqueda con flex + responsive */
+
+.search-box {
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  @include flex-center(row, center, flex-start);
+  gap: 15px;
+  flex-wrap: nowrap;
+
+  .search-field {
+    @include flex-center(column, flex-start, flex-start);
+    flex: 1;
+
+    input {
+      padding: 12px;
+      border: 1px solid $border-color;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    small {
+      color: #777;
+      margin-top: 5px;
+      font-size: 13px;
+    }
+  }
+
+  button {
+    background: $primary-color;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    @include transition;
+
+    &:hover {
+      background: $primary-hover;
+    }
+  }
+
+  // Responsividad
+  @include responsive(tablet) {
+    flex-wrap: wrap;
+
+    .search-field {
+      flex: 1 1 45%;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+
+  @include responsive(mobile) {
+    flex-direction: column;
+    align-items: stretch;
+
+    .search-field {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}

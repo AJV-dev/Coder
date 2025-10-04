@@ -23,10 +23,10 @@
         <!-- Navegación entre paginads principales-->
         <nav class="nav">
           <ul>
-            <li><a href="page/libros.html">Libros</a></li>
+            <!-- <li><a href="page/libros.html">Libros</a></li> -->
             <li><a href="page/eventos.html">Eventos</a></li>
-            <li><a href="page/favoritos.html">Favoritos</a></li>
-            <li><a href="page/blog.html">Blog</a></li>
+            <!-- <li><a href="page/favoritos.html">Favoritos</a></li> -->
+            <!-- <li><a href="page/blog.html">Blog</a></li> -->
           </ul>          
         </nav>
 
@@ -50,11 +50,23 @@
            buscar ese libro especial y mucho más.</p>
 
         <!-- Barra de búsqueda -->
-        <div class="search-box">
-          <input type="text" placeholder="Ej: espacio silencioso, café con libro...">
-          <input type="text" placeholder="Ciudad, barrio o zona...">
-          <button>Buscar Librerías</button>
-        </div>
+         <!-- Contenedor principal -->
+          <div class="search-box">
+            <!-- Input 1 -->
+            <div class="search-field">
+              <input type="text" placeholder="Ej: espacio silencioso, café con libro">
+              <small>Tipo de ambiente o actividad</small>
+            </div>
+
+            <!-- Input 2 -->
+            <div class="search-field">
+              <input type="text" placeholder="Ciudad, barrio o zona...">
+              <small>Ubicación preferida</small>
+            </div>
+
+            <!-- Botón -->
+            <button type="submit">🔍 Buscar Librerías</button>
+          </div>
 
         <!-- Texto de estadísticas para reflejar confianza -->
         <p class="search-info">

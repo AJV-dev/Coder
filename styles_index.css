@@ -37,38 +37,102 @@
   color: #444;
 }
 
+
+
+
 /* Barra de búsqueda */
+
+/* ----- CONTENEDOR PRINCIPAL ----- */
 .search-box {
-  margin: 30px auto;
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  display: flex;
-  gap: 10px;
-  max-width: 800px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 30px auto;                /* Centrado y separación superior */
+  background: white;                /* Fondo blanco */
+  padding: 20px;                    /* Espaciado interno */
+  border-radius: 10px;              /* Bordes redondeados */
+  max-width: 1000px;                /* Ancho máximo */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra ligera */
+  display: flex;                    /* Distribuir elementos en fila */
+  gap: 15px;                        /* Espaciado entre elementos */
+  align-items: flex-start;          /* Alinear arriba los campos */
+  justify-content: center;          /* Centrar horizontalmente */
+  flex-wrap: nowrap;                /* No se apilan aún */
 }
 
-.search-box input {
-  flex: 1;
+/* ----- CAMPOS DE TEXTO ----- */
+.search-field {
+  display: flex;
+  flex-direction: column;           /* Input arriba, texto abajo */
+  flex: 1;                          /* Que ambos campos ocupen mismo ancho */
+}
+
+.search-field input {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 14px;
 }
 
+.search-field small {
+  color: #777;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+/* ----- BOTÓN ----- */
 .search-box button {
-  background: #0d2d1f;
+  background: #0d2d1f;              /* Verde oscuro */
   color: white;
   border: none;
   padding: 12px 20px;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;              /* Evita que el texto del botón salte de línea */
+  height: 45px;
+  align-self: center;               /* Centrar verticalmente respecto a inputs */
 }
 
 .search-box button:hover {
-  background: #134d33;
+  background: #134d33;              /* Color más oscuro al pasar el mouse */
 }
+
+/* ----- RESPONSIVE (TABLET) ----- */
+@media (max-width: 992px) {
+  .search-box {
+    flex-wrap: wrap;                /* Permitir que los elementos se apilen */
+    justify-content: center;
+  }
+
+  .search-field {
+    flex: 1 1 45%;                  /* Dos campos por fila */
+  }
+
+  .search-box button {
+    flex: 1 1 100%;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* ----- RESPONSIVE (MÓVIL) ----- */
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: column;         /* Apilar todos los elementos */
+    align-items: stretch;           /* Que los elementos ocupen todo el ancho */
+  }
+
+  .search-field {
+    width: 100%;
+  }
+
+  .search-box button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+
+
+
 
 .search-info {
   font-size: 14px;

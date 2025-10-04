@@ -1,0 +1,66 @@
+
+// Estilos reutilizables para tarjetas o "cards"
+
+.card {
+  background: white;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  // Efecto hover
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  // Imagen superior de la card
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  // Contenido principal
+  .card-body {
+    padding: 20px;
+
+    h3 {
+      font-size: 18px;
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background: $primary-color;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      @include transition;
+
+      &:hover {
+        background: $primary-hover;
+      }
+    }
+  }
+
+  // Responsive: adaptar imagen y tamaño en pantallas pequeñas
+  @include responsive(mobile) {
+    img {
+      height: 160px;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+
+/* Sección de eventos con tarjetas */
+
+.events {
+  padding: 40px 0;
+
+  h2 {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 30px;
+  }
+
+  .event-card {
+    background: white;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    h3 {
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: 600;
+      color: $primary-hover;
+    }
+  }
+}

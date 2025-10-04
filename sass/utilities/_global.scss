@@ -1,0 +1,20 @@
+
+/* Define estilos base (body, links, tipografía) */
+
+body {
+  font-family: $font-main;
+  background-color: $bg-light;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+  @include transition;
+
+  &:hover {
+    color: $primary-hover;
+  }
+}
