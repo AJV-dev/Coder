@@ -1,0 +1,52 @@
+
+/* Contenido Relleno - Acá debería colocar el CSS para cada página en particular */
+/* Empuja el contenido para que no quede debajo del header */
+main {
+  margin-top: 120px;    /* Margen superior de toda la caja */
+  margin-bottom: 100px;    /* Margen inferior de toda la caja */
+}
+
+body {
+  background-color: #f8fbea; /* Fondo verde muy claro */
+}
+
+.login-card {
+  max-width: 400px; /* Limita el ancho máximo */
+  margin: auto; /* Centra horizontalmente */
+  margin-top: 5%; /* Espacio desde arriba */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra ligera */
+}
+
+.login-icon {
+  font-size: 3rem; /* Ícono grande */
+  color: #1e4d2b; /* Verde oscuro */
+}
+
+.btn-login {
+  background-color: #1e4d2b; /* Botón verde oscuro */
+  color: white; /* Texto blanco */
+}
+
+.btn-login:hover {
+  background-color: #163b21; /* Verde más oscuro al pasar el mouse */
+}
+
+.divider {
+  text-align: center; /* Texto centrado */
+  border-bottom: 1px solid #ddd; /* Línea gris */
+  line-height: 0.1em; /* Ajusta altura de línea */
+  margin: 20px 0; /* Separación arriba/abajo */
+}
+
+.divider span {
+  background: #fff; /* Fondo blanco para que el texto "rompa" la línea */
+  padding: 0 10px; /* Espacio alrededor del texto */
+  color: #888; /* Gris claro */
+  font-size: 0.9rem; /* Texto más pequeño */
+}
+
+.btn-social {
+  background-color: #f5f5f5; /* Fondo gris claro */
+  border: 1px solid #ddd; /* Borde fino gris */
+}
