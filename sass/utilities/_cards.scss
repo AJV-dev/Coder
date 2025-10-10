@@ -1,10 +1,13 @@
 
 // Estilos reutilizables para tarjetas o "cards"
 
+@use "variables.scss" as variables;
+@use "mixins.scss" as mixins;
+
 .card {
   background: white;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  border-radius: variables.$border-radius;
+  box-shadow: variables.$box-shadow;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -27,7 +30,7 @@
 
     h3 {
       font-size: 18px;
-      color: $primary-color;
+      color: variables.$primary-color;
       margin-bottom: 10px;
     }
 
@@ -39,22 +42,22 @@
     }
 
     .btn {
-      background: $primary-color;
+      background: variables.$primary-color;
       color: white;
       border: none;
       padding: 8px 16px;
       border-radius: 6px;
       font-size: 14px;
-      @include transition;
+      @include mixins.transition;
 
       &:hover {
-        background: $primary-hover;
+        background: variables.$primary-hover;
       }
     }
   }
 
   // Responsive: adaptar imagen y tamaño en pantallas pequeñas
-  @include responsive(mobile) {
+  @include mixins.responsive(mobile) {
     img {
       height: 160px;
     }

@@ -2,14 +2,21 @@
 /* Junta e Importa todos los partials */
 
 
-@use "../utilities/variables" as *;
-@use "../utilities/mixins" as *;
-@use "../utilities/global" as *;
-@use "../utilities/navbar" as *;
-@use "../utilities/searchbox" as *;
-@use "../utilities/cards" as *;
-@use "../utilities/forms" as *;
-@use "../utilities/events" as *;
+@use "../utilities/variables" as variables;
+@use "../utilities/mixins" as mixins;
+@use "../utilities/global" as global;
+@use "../utilities/navbar" as navbar;
+@use "../utilities/searchbox" as serchbox;
+@use "../utilities/cards" as cards;
+@use "../utilities/forms" as forms;
+@use "../utilities/events" as events;
+@use "../utilities/hyf" as hyf;
+@use "../utilities/index" as index;
+@use "../utilities/eventos" as eventos;
+@use "../utilities/registros" as registros;
+@use "../utilities/sesion.scss" as sesion;
+
+
 
 
 /* 

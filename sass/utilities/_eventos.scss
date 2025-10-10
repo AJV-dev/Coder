@@ -1,17 +1,20 @@
 
+
+@use "variables.scss" as variables;
+
 /* Empuja el contenido para que no quede debajo del header */
 main {
   margin-top: 120px;
 }
 
 /* ===== Estilo global del body ===== */
-body {
+/* body {
   background-color: #f8fbea !important; /* Fondo verde muy claro para toda la página */
-}
+
 
 /* ===== Estilos para los botones de filtro personalizados ===== */
 .btn-filter {
-  background-color: #f5f5f5 !important; /* fondo claro */
+  background-color: variables.$border-color !important; /* fondo claro */
   border: 1px solid #ddd !important;    /* borde gris muy sutil */
   color: #333 !important;               /* color de texto oscuro */
 }

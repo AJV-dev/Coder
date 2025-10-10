@@ -1,23 +1,26 @@
 
 /* Barra de búsqueda con flex + responsive */
 
+@use "variables.scss" as variables;
+@use "mixins.scss" as mixins;
+
 .search-box {
   margin: 30px auto;
   background: white;
   padding: 20px;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
-  @include flex-center(row, center, flex-start);
+  border-radius: variables.$border-radius;
+  box-shadow: variables.$box-shadow;
+  @include mixins.flex-center(row, center, flex-start);
   gap: 15px;
   flex-wrap: nowrap;
 
   .search-field {
-    @include flex-center(column, flex-start, flex-start);
+    @include mixins.flex-center(column, flex-start, flex-start);
     flex: 1;
 
     input {
       padding: 12px;
-      border: 1px solid $border-color;
+      border: 1px solid variables.$border-color;
       border-radius: 6px;
       font-size: 14px;
     }
@@ -30,22 +33,22 @@
   }
 
   button {
-    background: $primary-color;
+    background: variables.$primary-color;
     color: white;
     border: none;
     padding: 12px 20px;
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
-    @include transition;
+    @include mixins.transition;
 
     &:hover {
-      background: $primary-hover;
+      background: variables.$primary-hover;
     }
   }
 
   // Responsividad
-  @include responsive(tablet) {
+  @include mixins.responsive(tablet) {
     flex-wrap: wrap;
 
     .search-field {
@@ -57,7 +60,7 @@
     }
   }
 
-  @include responsive(mobile) {
+  @include mixins.responsive(mobile) {
     flex-direction: column;
     align-items: stretch;
 

@@ -1,19 +1,22 @@
 
 // Estilos globales y reutilizables para formularios
 
+@use "variables.scss" as variables;
+@use "mixins.scss" as mixins;
+
 form {
   max-width: 500px;
   margin: 0 auto;
   background: white;
   padding: 30px;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  border-radius: variables.$border-radius;
+  box-shadow: variables.$box-shadow;
 
   label {
     display: block;
     font-weight: 600;
     margin-bottom: 6px;
-    color: $primary-color;
+    color: variables.$primary-color;
   }
 
   input,
@@ -21,21 +24,21 @@ form {
   textarea {
     width: 100%;
     padding: 10px 12px;
-    border: 1px solid $border-color;
+    border: 1px solid variables.$border-color;
     border-radius: 6px;
     font-size: 14px;
     margin-bottom: 15px;
-    @include transition;
+    @include mixins.transition;
 
     &:focus {
       outline: none;
-      border-color: $primary-hover;
-      box-shadow: 0 0 4px rgba($primary-hover, 0.3);
+      border-color: variables.$primary-hover;
+      box-shadow: 0 0 4px rgba(variables.$primary-hover, 0.3);
     }
   }
 
   button {
-    background: $primary-color;
+    background: variables.$primary-color;
     color: white;
     border: none;
     padding: 12px;
@@ -44,10 +47,10 @@ form {
     width: 100%;
     cursor: pointer;
     font-weight: 600;
-    @include transition;
+    @include mixins.transition;
 
     &:hover {
-      background: $primary-hover;
+      background: variables.$primary-hover;
     }
   }
 
@@ -59,7 +62,7 @@ form {
   }
 
   // Responsividad
-  @include responsive(mobile) {
+  @include mixins.responsive(mobile) {
     padding: 20px;
     input,
     select,
