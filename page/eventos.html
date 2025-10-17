@@ -4,10 +4,9 @@
     <meta charset="UTF-8"> <!-- Codificación de caracteres (soporta acentos) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsive en móviles -->
     <title>LibrerySpotlight - Eventos</title> <!-- Título que aparece en la pestaña del navegador -->
-    
-    <!-- Enlaces a los CSS personalizados -->
-    <!-- <link rel="stylesheet" href="../styles_h&f.css"> -->
-    <!-- <link rel="stylesheet" href="styles_eventos.css"> -->
+    <meta name="descripción" content="Encuentra el evento que buscas y disfruta de una experiencia literaria con quien tu quieras"
+    <!--  -->
+
     <!-- CSS para linquear una vez que funciones la compilación de SASS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -25,19 +24,19 @@
     <!-- Logo -->
         <div class="logo">
             <a href="../index.html">
-            <img src="../img/logo/Logo_LibrarySpotlight.png" alt="Logo LibrarySpotlight">
+            <img src="../img/logo/Logo_LibrarySpotlight.png" alt="Logo_LibrarySpotlight">
             </a>
             <span></span>
         </div>
 
+    <!-- Botón hamburguesa (solo visible en móvil) -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+
     <!-- Navegación -->
         <nav class="nav">
-          <ul>
-            <!-- <li><a href="libros.html">Libros</a></li> -->
+        <ul>
             <li><a href="eventos.html">Eventos</a></li>
-            <!-- <li><a href="favoritos.html">Favoritos</a></li> -->
-            <!-- <li><a href="blog.html">Blog</a></li> -->
-          </ul>
+        </ul>
         </nav>
 
     <!-- Acciones para Registros -->
@@ -45,6 +44,16 @@
             <a href="sesion.html" class="login">Iniciar Sesión</a>
             <a href="registro.html" class="btn-register">Registrar Librerías</a>
         </div>
+
+      <script>
+        // JS simple para mostrar/ocultar menú
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+        menuToggle.addEventListener('click', () => {
+          nav.classList.toggle('active');
+        });
+      </script>
+
     </header>
 
     <!-- ======= DESARROLLO CUERPO CENTRAL DE PAGINA EVENTOS ======= -->
@@ -370,7 +379,7 @@
 
         <!-- Logo y descripción -->
         <div class="footer-section footer-logo">
-            <img class="img" src="../img/logo/Logo_LS_verde.png" alt="">
+            <img class="img" src="../img/logo/Logo_LS_verde.png" alt="Logo_LibrarySpotlight_verde">
             <p>Descubrí librerías únicas para cada momento. Tu próxima experiencia literaria te está esperando.</p>
         <div class="social-icons">
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>

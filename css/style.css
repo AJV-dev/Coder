@@ -35,7 +35,7 @@ a:hover {
 }
 .nav li a {
   color: #222;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 500;
 }
 .nav li a:hover {
@@ -48,6 +48,7 @@ a:hover {
   margin: 30px auto;
   background: white;
   padding: 20px;
+  max-width: 1000px; /* Ancho máximo */
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -256,10 +257,9 @@ form small {
 }
 
 /* Color completo */
-body {
-  background-color: #f6f8f1;
-}
-
+/* body {
+   background-color: #f6f8f1;
+} */
 /* Header */
 .header {
   margin: 0;
@@ -299,7 +299,7 @@ body {
 
 /* Tamaño del logo */
 .logo img {
-  height: 70px;
+  height: 90px;
 }
 
 /* Navegación */
@@ -333,7 +333,7 @@ body {
 .actions .login {
   text-decoration: none;
   color: #222;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 /* Para traer un formulario de registro */
@@ -343,13 +343,78 @@ body {
   color: white;
   padding: 8px 15px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .actions .btn-register:hover {
   background-color: #134d33;
 }
 
+/*  BOTÓN HAMBURGUESA */
+/* ------------------------------ */
+.menu-toggle {
+  display: none; /* oculto en escritorio */
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #0d2d1f;
+}
+
+/* ------------------------------ */
+/*  MEDIA QUERIES (Responsive)  */
+/* ------------------------------ */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+  /* Mostrar botón hamburguesa */
+  .menu-toggle {
+    display: block;
+  }
+  /* Ocultar navegación y acciones por defecto */
+  .nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: rgba(246, 248, 241, 0.95);
+    border-top: 1px solid rgba(224, 224, 224, 0.8);
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+  /* Mostrar el menú cuando está activo */
+  .nav.active {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+  /* Enlaces centrados */
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .actions {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .actions .login,
+  .actions .btn-register {
+    font-size: 18px;
+  }
+  /* Animación del desplegado */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
 /* A partir de aquí comiensa el footer */
 /* Footer */
 .footer {
@@ -461,7 +526,7 @@ body {
 .hero {
   background: url("img/hero-bg.jpg") no-repeat center center/cover; /* Imagen de fondo */
   margin-top: 30px;
-  padding: 100px 20px 60px; /* Espaciado interno */
+  padding: 30px 20px 60px; /* Espaciado interno */
   text-align: center; /* Centra texto e inputs */
   color: #0d2d1f; /* Verde oscuro para títulos */
 }
@@ -763,6 +828,7 @@ body {
     height: 160px;
   }
 }
+/* Junta e Importa todos los partials */
 /* Empuja el contenido para que no quede debajo del header */
 main {
   margin-top: 120px;
@@ -773,7 +839,7 @@ main {
   background-color: #f8fbea !important; /* Fondo verde muy claro para toda la página */
 /* ===== Estilos para los botones de filtro personalizados ===== */
 .btn-filter {
-  background-color: #f5f5f5 !important; /* fondo claro */
+  background-color: #ccc !important; /* fondo claro */
   border: 1px solid #ddd !important; /* borde gris muy sutil */
   color: #333 !important; /* color de texto oscuro */
 }
@@ -813,8 +879,6 @@ main {
 
 /* body {
   background-color: #f8fbea; /* Fondo verde claro */
-
-  
 .register-card {
   max-width: 600px; /* Ancho máximo del formulario */
   margin: auto; /* Centrado horizontal */

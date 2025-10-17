@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LibrarySpotlight</title>
-    <!-- <link  rel="stylesheet" href="styles_h&f.css"> -->
-    <!-- <link rel="stylesheet" href="styles_index.css"> -->
+    <meta name="descripción" content="Disfruta de eventos y lugares para tener buenas experiencias literarias en donde te encuentres"
+    <!--  -->
     <!-- CSS para linquear una vez que funciones la compilación de SASS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,26 +17,36 @@
      <!-- Logo -->
         <div class="logo">
             <a href="index.html">
-            <img src="img/logo/Logo_LibrarySpotlight.png" alt="Logo LibrarySpotlight">
+            <img src="img/logo/Logo_LibrarySpotlight.png" alt="Logo_LibrarySpotlight">
             </a>
             <span></span>
         </div>
 
-        <!-- Navegación entre paginads principales-->
-        <nav class="nav">
-          <ul>
-            <!-- <li><a href="page/libros.html">Libros</a></li> -->
-            <li><a href="page/eventos.html">Eventos</a></li>
-            <!-- <li><a href="page/favoritos.html">Favoritos</a></li> -->
-            <!-- <li><a href="page/blog.html">Blog</a></li> -->
-          </ul>          
+      <!-- Botón hamburguesa (solo visible en móvil) -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+
+      <!-- Navegación -->
+        <nav class="nav" id="nav">
+        <ul>
+          <li><a href="page/eventos.html">Eventos</a></li>
+        </ul>          
         </nav>
 
-        <!-- Acciones para Registro e inicio de sesión -->
+      <!-- Acciones -->
         <div class="actions">
-            <a href="page/sesion.html" class="login">Iniciar Sesión</a>
-            <a href="page/registro.html" class="btn-register">Registrar Librerías</a>
+          <a href="page/sesion.html" class="login">Iniciar Sesión</a>
+          <a href="page/registro.html" class="btn-register">Registrar Librerías</a>
         </div>
+      
+
+      <script>
+        // JS simple para mostrar/ocultar menú
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+        menuToggle.addEventListener('click', () => {
+          nav.classList.toggle('active');
+        });
+      </script>
     </header>
 
 
@@ -45,7 +55,7 @@
 
     <!-- HERO SECTION DESARROLLO DE LA PORTADA Y TITULO-->
     <section class="hero">
-      <img src="img/card grande/fodo_index.jpg" alt="imágen transparente de fondo" class="hero-bg">
+      <img src="img/card grande/fodo_index.jpg" alt="imágen_transparente_de_fondo_de_una_biblioteca_privada" class="hero-bg">
       <div class="hero-content">
         <h1>Descubrí librerías para <span>cada momento</span></h1>
         <p>Encontrá miles de librerías únicas para estudiar, trabajar, relajarte, 
@@ -139,7 +149,7 @@
 
         <!-- Ej 1: Biblioteca Central Borges -->
         <div class="card-big">
-          <img src="img/card grande/Biblioteca_Centra_Borges_Buenos_Aires_1.jpg" alt="Biblioteca Central Borges">
+          <img src="img/card grande/Biblioteca_Centra_Borges_Buenos_Aires_1.jpg" alt="Biblioteca_Central_Borges">
             <div class="card-info">
             <h3>Biblioteca Central Borges</h3>
             <p>Recoleta, Buenos Aires</p>
@@ -153,7 +163,7 @@
 
         <!-- Ej 2: Libros & Café Literario -->
   <div class="card-big">
-    <img src="img/card grande/Libros_&_Café_Literarios Buenos Aires 1.jpeg" alt="Libros & Café Literario">
+    <img src="img/card grande/Libros_&_Café_Literarios Buenos Aires 1.jpeg" alt="Libros_&_Café_Literario">
     <div class="card-info">
       <h3>Libros & Café Literario</h3>
       <p>Palermo, Buenos Aires</p>
@@ -167,7 +177,7 @@
 
   <!-- Ej 3: La Casa de los Libros -->
   <div class="card-big">
-    <img src="img/card grande/La_casa_de_los_Libros_Buenos_Aires_1.jpg" alt="La Casa de los Libros">
+    <img src="img/card grande/La_casa_de_los_Libros_Buenos_Aires_1.jpg" alt="La_Casa_de_los_Libros">
     <div class="card-info">
       <h3>La Casa de los Libros</h3>
       <p>San Telmo, Buenos Aires</p>
@@ -181,7 +191,7 @@
 
   <!-- Ej 4: Biblioteca Universitaria -->
   <div class="card-big">
-    <img src="img/card grande/Biblioteca_Universitaria_Buenos_Aires_1.jpg" alt="Biblioteca Universitaria">
+    <img src="img/card grande/Biblioteca_Universitaria_Buenos_Aires_1.jpg" alt="Biblioteca_Universitaria">
     <div class="card-info">
       <h3>Biblioteca Universitaria</h3>
       <p>Ciudad Universitaria, Buenos Aires</p>
@@ -211,7 +221,7 @@
 
          <!-- Logo y descripción -->
         <div class="footer-section footer-logo">
-            <img class="img" src="img/logo/Logo_LS_verde.png" alt="">
+            <img class="img" src="img/logo/Logo_LS_verde.png" alt="Logo_LibrarySpotlight_verde">
             <p>Descubrí librerías únicas para cada momento. Tu próxima experiencia literaria te está esperando.</p>
         <div class="social-icons">
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>

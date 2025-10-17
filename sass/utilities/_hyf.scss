@@ -41,7 +41,7 @@
 }
 /* Tamaño del logo */
 .logo img {
-  height: 70px;
+  height: 90px;
 }
 
 /* Navegación */
@@ -75,7 +75,7 @@
 .actions .login {
   text-decoration: none;
   color: #222;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 /* Para traer un formulario de registro */
@@ -85,11 +85,84 @@
   color: white;
   padding: 8px 15px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .actions .btn-register:hover {
   background-color: #134d33;
+}
+
+/*  BOTÓN HAMBURGUESA */
+/* ------------------------------ */
+.menu-toggle {
+  display: none; /* oculto en escritorio */
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #0d2d1f;
+}
+
+/* ------------------------------ */
+/*  MEDIA QUERIES (Responsive)  */
+/* ------------------------------ */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  /* Mostrar botón hamburguesa */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Ocultar navegación y acciones por defecto */
+  .nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: rgba(246, 248, 241, 0.95);
+    border-top: 1px solid rgba(224, 224, 224, 0.8);
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  /* Mostrar el menú cuando está activo */
+  .nav.active {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+
+  /* Enlaces centrados */
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .actions .login,
+  .actions .btn-register {
+    font-size: 18px;
+  }
+
+  /* Animación del desplegado */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 
