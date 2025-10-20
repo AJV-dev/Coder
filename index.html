@@ -13,7 +13,7 @@
 </head> 
 
 <body> 
-    <!-- El Header que se repetirá en todas las páginas y quedará fijado para facilitar la navegación -->
+<!-- El Header que se repetirá en todas las páginas y quedará fijado para facilitar la navegación -->
     <header class="header">
      <!-- Logo -->
         <div class="logo">
@@ -22,10 +22,7 @@
             </a>
             <span></span>
         </div>
-
-      <!-- Botón hamburguesa (solo visible en móvil) -->
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
-
+        
       <!-- Navegación -->
         <nav class="nav" id="nav">
         <ul>
@@ -38,16 +35,7 @@
           <a href="page/sesion.html" class="login">Iniciar Sesión</a>
           <a href="page/registro.html" class="btn-register">Registrar Librerías</a>
         </div>
-      
 
-      <script>
-        // JS simple para mostrar/ocultar menú
-        const menuToggle = document.getElementById('menu-toggle');
-        const nav = document.getElementById('nav');
-        menuToggle.addEventListener('click', () => {
-          nav.classList.toggle('active');
-        });
-      </script>
     </header>
 
 

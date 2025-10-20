@@ -297,11 +297,6 @@
 
 @media (max-width: 600px) {
 
-  /* No estoy pudiendo hacer responsive estas cajas de busquedas y el boton para menos 600px */
-  /* .search-box {
-    grid-template-columns: 1fr; 
-  } */
-
   .library-cards-big {
     grid-template-columns: 1fr; /* 1 tarjeta por fila */
   }

@@ -256,10 +256,6 @@ form small {
   color: #134d33;
 }
 
-/* Color completo */
-/* body {
-   background-color: #f6f8f1;
-} */
 /* Header */
 .header {
   margin: 0;
@@ -369,20 +365,6 @@ form small {
     flex-wrap: wrap;
     padding: 10px 20px;
   }
-  /* Mostrar botón hamburguesa */
-  .menu-toggle {
-    display: block;
-  }
-  /* Ocultar navegación y acciones por defecto */
-  .nav {
-    width: 100%;
-    display: none;
-    flex-direction: column;
-    background-color: rgba(246, 248, 241, 0.95);
-    border-top: 1px solid rgba(224, 224, 224, 0.8);
-    margin-top: 10px;
-    padding: 10px 0;
-  }
   /* Mostrar el menú cuando está activo */
   .nav.active {
     display: flex;
@@ -402,17 +384,6 @@ form small {
   .actions .login,
   .actions .btn-register {
     font-size: 18px;
-  }
-  /* Animación del desplegado */
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
   }
 }
 /* A partir de aquí comiensa el footer */
@@ -802,10 +773,6 @@ form small {
 
 /* Medias query - Responsive - Celulares */
 @media (max-width: 600px) {
-  /* No estoy pudiendo hacer responsive estas cajas de busquedas y el boton para menos 600px */
-  /* .search-box {
-    grid-template-columns: 1fr; 
-  } */
   .library-cards-big {
     grid-template-columns: 1fr; /* 1 tarjeta por fila */
   }
@@ -829,14 +796,6 @@ form small {
   }
 }
 /* Junta e Importa todos los partials */
-/* Empuja el contenido para que no quede debajo del header */
-main {
-  margin-top: 120px;
-}
-
-/* ===== Estilo global del body ===== */
-/* body {
-  background-color: #f8fbea !important; /* Fondo verde muy claro para toda la página */
 /* ===== Estilos para los botones de filtro personalizados ===== */
 .btn-filter {
   background-color: #ccc !important; /* fondo claro */
@@ -870,15 +829,6 @@ main {
     padding-right: 0.75rem !important;
   }
 }
-/* Contenido Relleno - Acá debería colocar el CSS para cada página en particular */
-/* Empuja el contenido para que no quede debajo del header */
-main {
-  margin-top: 120px; /* Margen superior de toda la caja */
-  margin-bottom: 70px; /* Margen inferior de toda la caja */
-}
-
-/* body {
-  background-color: #f8fbea; /* Fondo verde claro */
 .register-card {
   max-width: 600px; /* Ancho máximo del formulario */
   margin: auto; /* Centrado horizontal */
@@ -909,14 +859,12 @@ main {
 /* Contenido Relleno - Acá debería colocar el CSS para cada página en particular */
 /* Empuja el contenido para que no quede debajo del header */
 main {
-  margin-top: 120px; /* Margen superior de toda la caja */
+  margin-top: 175px; /* Margen superior de toda la caja */
   margin-bottom: 100px; /* Margen inferior de toda la caja */
 }
 
-/* body {
-  background-color: #f8fbea; /* Fondo verde muy claro */
 .login-card {
-  max-width: 400px; /* Limita el ancho máximo */
+  max-width: 420px; /* Limita el ancho máximo */
   margin: auto; /* Centra horizontalmente */
   margin-top: 5%; /* Espacio desde arriba */
   border-radius: 15px; /* Bordes redondeados */

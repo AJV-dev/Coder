@@ -1,7 +1,3 @@
-/* Color completo */
-/* body {
-   background-color: #f6f8f1;
-} */
 
 /* Header */
 .header {
@@ -111,23 +107,7 @@
     flex-wrap: wrap;
     padding: 10px 20px;
   }
-
-  /* Mostrar botón hamburguesa */
-  .menu-toggle {
-    display: block;
-  }
-
-  /* Ocultar navegación y acciones por defecto */
-  .nav {
-    width: 100%;
-    display: none;
-    flex-direction: column;
-    background-color: rgba(246, 248, 241, 0.95);
-    border-top: 1px solid rgba(224, 224, 224, 0.8);
-    margin-top: 10px;
-    padding: 10px 0;
-  }
-
+  
   /* Mostrar el menú cuando está activo */
   .nav.active {
     display: flex;
@@ -151,20 +131,7 @@
   .actions .btn-register {
     font-size: 18px;
   }
-
-  /* Animación del desplegado */
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 }
-
 
 /* A partir de aquí comiensa el footer */
 /* Footer */

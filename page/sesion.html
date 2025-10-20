@@ -29,10 +29,7 @@
             <span></span>
         </div>
 
-    <!-- Botón hamburguesa (solo visible en móvil) -->
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
-
-    <!-- Navegación -->
+  <!-- Navegación -->
         <nav class="nav">
         <ul>
             <li><a href="eventos.html">Eventos</a></li>
@@ -45,15 +42,8 @@
             <a href="registro.html" class="btn-register">Registrar Librerías</a>
         </div>
 
-        <script>
-          // JS simple para mostrar/ocultar menú
-          const menuToggle = document.getElementById('menu-toggle');
-          const nav = document.getElementById('nav');
-          menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-          });
-        </script>
-    </header>
+   </header>
+
 
     <!-- Contenido de la pagina - Formulario Inicia Sesión -->
 
@@ -94,21 +84,24 @@
           </div>
         </div>
 
-        <!-- Opciones: Recordarme y Olvidé mi contraseña -->
+       <!-- Opciones: Recordarme y Olvidé mi contraseña -->
         <div class="d-flex justify-content-between align-items-center mb-3">
           <!-- Checkbox Recordarme -->
           <div class="form-check"> <!-- form-check = estilo Bootstrap para checkbox -->
             <input class="form-check-input" type="checkbox" id="rememberMe">
-            <label class="form-check-label" for="rememberMe">Recordarme</label>
+            <label class="form-check-label ms-3" for="rememberMe">Recordarme</label>
           </div>
-          <!-- Enlace a recuperar contraseña - Esto se desarrollará a futuro -->
-          <a href="#" class="small text-decoration-none">¿Olvidaste tu contraseña?</a>
-        </div>
+      </div>
 
         <!-- Botón de Iniciar sesión -->
         <div class="d-grid mb-3"> <!-- d-grid = display grid (botón ocupa 100% ancho) -->
           <button type="submit" class="btn btn-login">Iniciar Sesión</button>
         </div>
+
+        <!-- Enlace a recuperar contraseña - Esto se desarrollará a futuro -->
+          <div>
+            <a href="#" class="small text-decoration-none">¿Olvidaste tu contraseña?</a>
+          </div>
       </form>
 
       <!-- Línea divisoria -->
